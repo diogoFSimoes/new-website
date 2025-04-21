@@ -117,6 +117,14 @@
             // Log an error if essential elements are missing
             console.error("Error: Could not find necessary HTML elements (button, input, or feedback divs).");
         }
+
+        document.hasStorageAccess().then((hasAccess) => {
+            if (hasAccess) {
+              console.log("Has Storage Access!!")
+            } else {
+              console.warn("Has Not Storage Access!!")
+            }
+        });
     </script>
 
     <h1>Test Related Website</h1>
