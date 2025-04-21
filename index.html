@@ -90,7 +90,7 @@
                 const cookieValue = encodeURIComponent(enteredUsername); // Encode for safety
                 const maxAgeSeconds = 30 * 24 * 60 * 60; // Cookie lasts for 30 days
                 const path = "/"; // Make cookie accessible site-wide
-                const sameSite = "Lax"; // Good security default
+                const sameSite = "None"; // Good security default
                 const secure = true; // IMPORTANT: Requires HTTPS!
 
                 // --- 4. Construct the cookie string ---
